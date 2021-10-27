@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 150vh;
   background-image: linear-gradient(32deg, rgba(148, 187, 233, 1) 0%, rgba(172, 225, 220, 1) 27%, rgba(238, 174, 202, 1) 70%, rgba(211, 178, 211, 1) 100%);
   font-family: "Andika New Basic", sans-serif;
   perspective: 1500px;
@@ -362,7 +362,14 @@ a:hover {
   cursor: pointer;
 }
 
-/* Contacts section ends */
+/* Skills section starts */
+
+.skills {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 
 /* Social buttons */
 .socials {
