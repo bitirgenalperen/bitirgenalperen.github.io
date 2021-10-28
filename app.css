@@ -23,6 +23,22 @@ header {
   align-items: center;
 }
 
+.footer {
+  display: inline-block;
+  padding: .7rem .5rem;
+  background: #e0e0da;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: #a55;
+  border-radius: 20px;
+  transition: background 0.5s;
+  height: 5rem;
+  position: center;
+  margin-bottom: 2rem;
+  margin-left: 50%;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -70,7 +86,8 @@ p {
 }
 
 .btnr:hover {
-  background: #dadada;
+  background: #bebebe;
+  color: rgb(92, 219, 102);
 }
 
 /* Selected link   */
