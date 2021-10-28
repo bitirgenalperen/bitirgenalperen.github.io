@@ -9,6 +9,8 @@
 body {
   height: 150vh;
   background-image: linear-gradient(32deg, rgba(148, 187, 233, 1) 0%, rgba(172, 225, 220, 1) 27%, rgba(238, 174, 202, 1) 70%, rgba(211, 178, 211, 1) 100%);
+  background-size: cover;
+  background-position: 50%;
   font-family: "Andika New Basic", sans-serif;
   perspective: 1500px;
 }
@@ -362,12 +364,23 @@ a:hover {
   cursor: pointer;
 }
 
+
+
 /* Skills section starts */
 
 .skills {
   padding-top: 10px;
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
+  width: 40%;
+}
+
+/* Education section starts */
+
+.education {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: 30%;
   width: 40%;
 }
 
