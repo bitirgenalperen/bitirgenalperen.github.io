@@ -64,6 +64,7 @@ p {
 .subtext {
     font-size: 15px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .hero-area {
@@ -99,6 +100,47 @@ p {
     color: #808080;
 }
 
+.viewbutton-left {
+    width: 4em;
+    height: 3em;
+    border-radius: 30px;
+    background-color: #98d8b8;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 2em;
+    display: inline-block;
+}
+.viewbutton-right {
+    width: 4em;
+    height: 3em;
+    border-radius: 30px;
+    background-color: #98d8b8;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+.rowbutton{
+    text-align:center;
+    /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+    margin-left:0px;
+    margin-right:0px;
+    
+  }
+.button-image{
+    bottom: 10px;
+    width: 2.5em;
+}
 /* Social buttons */
 .socials {
     padding-top: 350px;
@@ -149,10 +191,10 @@ p {
 
 .project-card {
     background-color:rgb(255, 250, 232);
-    width: 300px;
-    height: 500px;
+    width: 30em;
+    height: 44em;
     box-shadow: 5px 5px 20px rgb(240, 208, 208);
-    margin: 10px;
+    margin: 3em;
     border-radius: 50px;
 }
 
@@ -170,7 +212,7 @@ p {
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
+    width: 25em;
     border-radius: 25px;
 }
 
