@@ -1,82 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel=" stylesheet" href="app.css" />
-  <link rel="icon" href="./logo/pagelogo.png" type="image.png" sizes="16x16" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="src/images/pagelogo.png" type="image.png" sizes="32x32" />
   <title>Alperen Bitirgen</title>
+  <meta charset="UTF-8" />
 </head>
 
 <body>
-  <header>
-    <a href="index.html"><img class="mylogo" src="./logo/home.png" alt="Alperen Bitirgen Logo" /></a>
-    <nav class="navbar">
-      <ul class="nav__links">
-        <li data-expand="home" class="nav--link"><a href="index.html">Home</a></li>
-        <li data-expand="projects" class="nav--link"><a href="projects.html">Projects</a></li>
+  <section class="hero">
+    <nav>
+      <img class="logo" src="src/images/logo_transparent.png" alt="Alperen Bitirgen's logo" />
+      <ul id="nav-list">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="notebooks.html">Notebooks</a></li>
       </ul>
-    </nav>
-    <a href="https://www.fiverr.com/share/851o7v">
-      <button class="btn btn--primary">
-        <span>Hire
-          Me</span>
-        <div class="arrow">
-          <div class="line arrow--sideUp"></div>
-          <div class="line arrow--sideDown"></div>
-          <div class="line arrow--hoverLine"></div>
-        </div>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
       </button>
-    </a>
+    </nav>
+    <div class="hero-area">
+      <div class="hero-text">
+        <h1>Alperen Bitirgen</h1>
+        <p>Machine Learning Engineer & Data Scientist</p>
+        <div class="button"><a href="resume.pdf" class="btnr" download="resume">Download Resume</a></div>
+      </div>
 
+      <!-- Social accounts - Fixed to the right -->
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/bitirgenalperen/" target="_blank"><img src="animate/linkedin.gif"
+            alt="Linkedin" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/mergen-g" target="_blank"><img src="animate/github.gif" alt="Github"
+            class="socicon" /></a>
 
-    <!-- About Me and Download Resume Section -->
+        <a href="mailto:bitirgenalperen@gmail.com" target="_blank"><img src="./animate/gmail.gif" alt="Gmail"
+            class="socicon" /></a>
 
-  </header>
-  <div class="container">
-    <h1>Alperen Bitirgen</h1>
-    <h2>Machine Learning Engineer & Data Scientist</h2>
-    <div class="image">
-      <img src="./ben/transparant_ben.png" alt="Photo of Me">
+      </div>
     </div>
-    <p>
-      I am a senior computer engineering student at Middle East Technical University. I am interested in the area of
-      machine learning and deep learning while seeking to gain professional experience over their applications. I
-      would be glad to gain professional experience as an engineer and a researcher. I have been enthusiastic about
-      improving my technical and theoretical knowledge as well as making use of those in the practical aspects through
-      real-world problems and practices.
-    </p>
-    <a href="resume.pdf" class="btnr" download="resume">Download Resume</a>
-  </div>
-  <!-- Skills part -->
-  <div class="skills">
-    <img src="./homepage/skills.svg" alt="skills">
-  </div>
-  <!-- Experience part -->
-  <div class="experience">
-    <img src="./homepage/experience.svg" alt="experience">
-  </div>
-  <!-- Education part -->
-  <div class="education">
-    <img src="./homepage/education.svg" alt="education">
-  </div>
-  <!-- Social accounts - Fixed to the right -->
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/bitirgenalperen/" target="_blank"><img src="animate/linkedin.gif"
-        alt="Linkedin" loading="lazy" class="socicon" /></a>
-    <a href="https://github.com/mergen-g" target="_blank"><img src="animate/github.gif" alt="Github"
-        class="socicon" /></a>
-  </div>
-  <footer>
-    <div class="footer">
-      <p>Alperen Bitirgen<br>
-        <a href="mailto:bitirgenalperen@gmail.com"><img src="./homepage/gmail.svg" alt="gmail" width="20px"> Gmail</a>
-      </p>
+  </section>
+  <section class="sub-section" id="about-me">
+    <div class="information">
+      <h2>About Me</h2>
+      <p>Hello. My name is Alperen Bitirgen. I am a Machine Learning Engineer and Data Scientist with a passion for
+        research and learning.</p>
     </div>
-  </footer>
+    <div class="headshot-container">
+      <img class="headshot" src="src/images/headshot.png" alt="Alperen Bitirgen headshot" />
+    </div>
+  </section>
+  <section>
+    <div>
+      <div class="skills">
+        <img src="src/images/skills.svg" alt="skills">
+      </div>
+      <!-- Experience part -->
+      <div class="experience">
+        <img src="src/images/experience.svg" alt="experience">
+      </div>
+      <!-- Education part -->
+      <div class="education">
+        <img src="src/images/education.svg" alt="education">
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="src/app.js"></script>
 </body>
-
-<script src="app.js"></script>
 
 </html>
