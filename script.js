@@ -27,6 +27,7 @@ themeToggle.addEventListener('click', () => {
     body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateThemeIcon();
+    updateNavbarBackground(); // Update navbar immediately
 });
 
 // Mobile Navigation
@@ -88,11 +89,8 @@ function updateActiveNavLink() {
     });
 }
 
-// Scroll Event Listener
-window.addEventListener('scroll', () => {
-    updateActiveNavLink();
-    
-    // Navbar background on scroll
+// Function to update navbar background
+function updateNavbarBackground() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.style.background = body.getAttribute('data-theme') === 'dark' 
@@ -103,6 +101,12 @@ window.addEventListener('scroll', () => {
             ? 'rgba(31, 41, 55, 0.95)' 
             : 'rgba(255, 255, 255, 0.95)';
     }
+}
+
+// Scroll Event Listener
+window.addEventListener('scroll', () => {
+    updateActiveNavLink();
+    updateNavbarBackground();
 });
 
 // Intersection Observer for Animations
@@ -126,29 +130,35 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add('loading');
         observer.observe(el);
     });
+    
+    // Initialize skill icons with hidden state
+    const skillIcons = document.querySelectorAll('.skill-icon');
+    skillIcons.forEach(icon => {
+        icon.style.opacity = '0';
+        icon.style.transform = 'translateY(20px)';
+        icon.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
 });
 
-// Skill Progress Bar Animation
-function animateSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-progress');
+// Skill Icons Animation
+function animateSkillIcons() {
+    const skillIcons = document.querySelectorAll('.skill-icon');
     
-    skillBars.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0%';
-        
+    skillIcons.forEach((icon, index) => {
         setTimeout(() => {
-            bar.style.width = width;
-        }, 500);
+            icon.style.opacity = '1';
+            icon.style.transform = 'translateY(0)';
+        }, index * 100);
     });
 }
 
-// Animate skill bars when skills section is in view
+// Animate skill icons when skills section is in view
 const skillsSection = document.querySelector('#skills');
 if (skillsSection) {
     const skillsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateSkillBars();
+                animateSkillIcons();
                 skillsObserver.unobserve(entry.target);
             }
         });

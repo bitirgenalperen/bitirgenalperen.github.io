@@ -122,15 +122,11 @@ body {
 
 /* Theme Toggle */
 .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
     background: var(--card-background);
     border: 2px solid var(--border);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +165,12 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo h2 {
@@ -375,7 +377,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-text p {
@@ -388,7 +390,7 @@ body {
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -416,6 +418,8 @@ body {
 .education-timeline {
     position: relative;
     padding-left: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .education-timeline::before {
@@ -503,12 +507,14 @@ body {
 
 .experience-timeline .timeline-item:nth-child(odd) {
     left: 0;
-    padding-right: 2rem;
+    padding-right: 3rem;
+    text-align: right;
 }
 
 .experience-timeline .timeline-item:nth-child(even) {
     left: 50%;
-    padding-left: 2rem;
+    padding-left: 3rem;
+    text-align: left;
 }
 
 .experience-timeline .timeline-marker {
@@ -727,28 +733,45 @@ body {
     color: var(--primary-color);
 }
 
-.skill-item {
-    margin-bottom: 1rem;
+.skill-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
 }
 
-.skill-item span {
-    display: block;
-    font-weight: 500;
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: var(--background-alt);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.skill-icon:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.skill-icon i {
+    font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
-.skill-bar {
-    width: 100%;
-    height: 8px;
-    background: var(--border);
-    border-radius: 4px;
-    overflow: hidden;
+.skill-icon:hover i {
+    color: white;
 }
 
-.skill-progress {
-    height: 100%;
-    background: var(--gradient);
-    transition: width 1s ease;
+.skill-icon span {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .skill-tags {
@@ -937,6 +960,15 @@ body {
         display: flex;
     }
 
+    .nav-actions {
+        gap: 0.5rem;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -967,10 +999,12 @@ body {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        text-align: center;
     }
 
     .about-stats {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .experience-timeline::before {
@@ -982,6 +1016,7 @@ body {
         left: 0;
         padding-left: 3rem;
         padding-right: 0;
+        text-align: left;
     }
 
     .experience-timeline .timeline-marker {
@@ -994,6 +1029,19 @@ body {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .skill-icons {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.75rem;
+    }
+    
+    .skill-icon {
+        padding: 0.75rem;
+    }
+    
+    .skill-icon i {
+        font-size: 1.5rem;
     }
 
     .contact-content {
