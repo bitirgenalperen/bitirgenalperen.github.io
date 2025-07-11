@@ -1,64 +1,415 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="src/styles.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="src/images/pagelogo.png" type="image.png" sizes="32x32" />
-  <title>Alperen Bitirgen</title>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alperen Bitirgen - Software Engineer & AI Specialist</title>
+    <meta name="description" content="Software Engineer and AI Specialist with expertise in Machine Learning, Web Development, and Mobile Apps">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <section class="hero">
-    <nav>
-      <img class="logo" src="src/images/logo_transparent.png" alt="Alperen Bitirgen's logo" />
-      <ul id="nav-list">
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AB</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-    <div class="hero-area">
-      <div class="hero-text">
-        <h1>Alperen Bitirgen</h1>
-        <p>Software Engineer</p>
-        <div class="button"><a href="resume.pdf" class="btnr" download="resume">Download Resume</a></div>
-      </div>
 
-      <!-- Social accounts - Fixed to the right -->
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/bitirgenalperen/" target="_blank"><img src="animate/linkedin.gif"
-            alt="Linkedin" loading="lazy" class="socicon" /></a>
-        <a href="https://github.com/bitirgenalperen" target="_blank"><img src="animate/github.gif" alt="Github"
-            class="socicon" /></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Alperen Bitirgen</span>
+                </h1>
+                <h2 class="hero-subtitle">Software Engineer & AI Specialist</h2>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions with AI, machine learning, and modern web technologies.
+                    Currently pursuing M.Sc. in AI and Data Analytics at Politecnico di Torino.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/bitirgenalperen" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bitirgenalperen/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:bitirgenalperen@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon python"><i class="fab fa-python"></i></div>
+                        <div class="icon javascript"><i class="fab fa-js"></i></div>
+                        <div class="icon react"><i class="fab fa-react"></i></div>
+                        <div class="icon docker"><i class="fab fa-docker"></i></div>
+                        <div class="icon code"><i class="fas fa-code"></i></div>
+                        <div class="icon ai"><i class="fas fa-robot"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <a href="mailto:bitirgenalperen@gmail.com" target="_blank"><img src="./animate/gmail.gif" alt="Gmail"
-            class="socicon" /></a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Software Engineer and AI Specialist with a passion for creating innovative solutions 
+                        that bridge the gap between cutting-edge technology and real-world applications. Currently pursuing 
+                        my Master's degree in AI and Data Analytics at Politecnico di Torino, I bring a unique combination 
+                        of academic excellence and practical experience.
+                    </p>
+                    <p>
+                        My expertise spans across machine learning, web development, and mobile applications. I have hands-on 
+                        experience with YOLOv8-based computer vision systems, real-time streaming solutions, and full-stack 
+                        web applications. I'm particularly interested in AI applications, robotics, and building scalable 
+                        software systems.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>91%</h3>
+                            <p>ML Model Accuracy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>M.Sc. AI and Data Analytics</h3>
+                                <p>Politecnico di Torino</p>
+                                <span>2023 - 2024</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>B.Sc. Computer Engineering</h3>
+                                <p>Middle East Technical University</p>
+                                <span>2019 - 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      </div>
-    </div>
-  </section>
-  <section class="sub-section" id="about-me">
-    <div class="information">
-      <h2>About Me</h2>
-      <p>Hello. My name is Alperen Bitirgen. I am a Software Engineer.</p>
-    </div>
-  </section>
-  <section>
-    <div>
-      
-    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Undergraduate Researcher</h3>
+                        <h4>KOVAN Research Laboratory</h4>
+                        <span class="timeline-date">Jul 2022 - Sep 2022</span>
+                        <p>Ankara, Turkey</p>
+                        <ul>
+                            <li>Developed a YOLOv8-based machine learning pipeline for real-time chess piece detection and classification, achieving 91% accuracy</li>
+                            <li>Optimized model performance with INT8 quantization, improving inference speed by 300% (16.8ms to 5.4ms per frame)</li>
+                            <li>Implemented ROS 2-dependent modules for robotic arm synchronization and precise chess move execution</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>ULKEM</h4>
+                        <span class="timeline-date">Feb 2021 - Mar 2021</span>
+                        <p>Ankara, Turkey</p>
+                        <ul>
+                            <li>Developed WebRTC-based streaming solution for real-time IP camera feeds with <500ms latency</li>
+                            <li>Implemented WebSocket-based control system with 95% command execution success rate</li>
+                            <li>Optimized video streaming, reducing bandwidth usage by 30% while maintaining >90% visual quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/bitirgenalperen/CERNSequencer" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CERNSequencer</h3>
+                        <p>Particle Accelerator Control System MVP</p>
+                        <p>Comprehensive Python GUI application using PyQt5 for CERN particle accelerator operations with drag-and-drop sequence editing and real-time validation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyQt5</span>
+                            <span>Multi-threading</span>
+                            <span>JSON/YAML</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/bitirgenalperen/interWorld" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>interworld</h3>
+                        <p>Real Estate Web Application</p>
+                        <p>Full-stack real estate booking platform with dynamic property filtering, RBAC with JWT authentication, and optimized API performance.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>JavaScript</span>
+                            <span>JWT</span>
+                            <span>RBAC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-link">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cutify</h3>
+                        <p>Social Media App for Pets</p>
+                        <p>Mobile social media app for pet owners with breed prediction model using TFLite, achieving 92% accuracy in classifying 50+ pet breeds.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>TensorFlow Lite</span>
+                            <span>Machine Learning</span>
+                            <span>Mobile Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C/C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">ExpressJS</span>
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">PyQt</span>
+                        <span class="skill-tag">TensorFlowJS</span>
+                        <span class="skill-tag">Pytest</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">ROS 2</span>
+                        <span class="skill-tag">WebRTC</span>
+                        <span class="skill-tag">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="src/app.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and AI.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:bitirgenalperen@gmail.com">bitirgenalperen@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+905102239397">+90 510 223 9397</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Ankara, Turkey</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/bitirgenalperen" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bitirgenalperen/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:bitirgenalperen@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alperen Bitirgen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
-</html>
+</html> 
